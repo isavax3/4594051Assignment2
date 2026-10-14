@@ -15,6 +15,7 @@ import com.example.assignment2.databinding.ActivityDashboardBinding
 import com.example.assignment2.ui.common.padForSystemBars
 import com.example.assignment2.ui.common.setUpEdgeToEdge
 import com.example.assignment2.ui.details.EntityExtras
+import com.example.assignment2.ui.login.LoginActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -39,6 +40,7 @@ class DashboardActivity : AppCompatActivity() {
         binding.recyclerEntities.adapter = adapter
 
         binding.buttonRetry.setOnClickListener { viewModel.loadEntities() }
+        binding.buttonLogOut.setOnClickListener { logOut() }
 
         observeState()
     }
@@ -71,6 +73,14 @@ class DashboardActivity : AppCompatActivity() {
 
     private fun openDetails(entity: Entity) {
         startActivity(EntityExtras.newDetailsIntent(this, entity))
+    }
+
+    // back to login and clear the screens behind it so back doesn't return here
+    private fun logOut() {
+        val intent = Intent(this, LoginActivity::class.java)
+            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        startActivity(intent)
+        finish()
     }
 
     companion object {

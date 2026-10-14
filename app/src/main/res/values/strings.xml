@@ -19,6 +19,7 @@
     <!-- dashboard screen -->
     <string name="dashboard_kicker">Your topic</string>
     <string name="item_count">%1$d items</string>
+    <string name="log_out">Log out</string>
     <string name="loading_items">Loading your items…</string>
     <string name="empty_items">There\'s nothing in this topic yet.</string>
     <string name="try_again">Try again</string>

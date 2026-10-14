@@ -12,14 +12,14 @@
     android:orientation="vertical"
     tools:context=".ui.dashboard.DashboardActivity">
 
-    <!-- header: topic name and item count -->
+    <!-- header: topic name and item count on the left, log out button on the right -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingStart="@dimen/screen_margin"
         android:paddingTop="16dp"
-        android:paddingEnd="@dimen/screen_margin"
+        android:paddingEnd="12dp"
         android:paddingBottom="12dp">
 
         <LinearLayout
@@ -62,6 +62,15 @@
                 tools:text="7 items"
                 tools:visibility="visible" />
         </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_log_out"
+            android:layout_width="@dimen/touch_target"
+            android:layout_height="@dimen/touch_target"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/log_out"
+            android:src="@drawable/ic_log_out"
+            app:tint="@color/ink" />
     </LinearLayout>
 
     <FrameLayout
