@@ -8,7 +8,7 @@
     <string name="login_title">Good to have you back.</string>
     <string name="login_subtitle">Log in with your student ID and first name to see your topic.</string>
     <string name="label_student_id">Student ID</string>
-    <string name="hint_student_id">e.g. 12345678</string>
+    <string name="hint_student_id">Numbers only, without the "s"</string>
     <string name="label_first_name">First name</string>
     <string name="hint_first_name">Your first name</string>
     <string name="log_in">Log in</string>

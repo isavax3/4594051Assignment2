@@ -30,7 +30,7 @@ The project uses Gradle 9.1 through the Gradle wrapper, so you don't need to ins
 If Android Studio asks about the Gradle JDK, the JDK that comes with Android Studio works.
 
 ## Logging in
-- **Student ID:** your 8 digit student number without the "s", e.g. `12345678`
+- **Student ID:** your student number without the "s", e.g. `1234567` for s1234567
 - **First name:** your first name exactly how the uni has it. It's case sensitive, so `Alex` works but `alex` doesn't
 
 The API is on a free server that goes to sleep when nobody is using it, so the first login can take up to a minute.
