@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 
 // the spec says the project has to be called StudentIDAssignment2
-rootProject.name = "StudentIDAssignment2"
+rootProject.name = "4594051Assignment2"
 include(":app")

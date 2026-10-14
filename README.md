@@ -1,4 +1,4 @@
-# StudentIDAssignment2 - NIT3213 Final Assignment
+# 4594051Assignment2 - NIT3213 Final Assignment
 
 This is my Android app for the NIT3213 final assignment. It logs in to the `nit3213api` with my student ID and
 first name, gets my topic's list of entities and shows them in a RecyclerView. Tapping an item opens a details
