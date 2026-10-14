@@ -26,6 +26,12 @@ android {
         // generates a binding class for each layout so I don't need findViewById everywhere
         viewBinding = true
     }
+
+    testOptions {
+        // android methods return default values in unit tests instead of throwing
+        // (needed for the RecyclerView adapter test)
+        unitTests.isReturnDefaultValues = true
+    }
 }
 
 dependencies {
@@ -53,4 +59,9 @@ dependencies {
     // moshi-kotlin uses kotlin-reflect, this keeps it on the same version as the kotlin in AGP 9
     implementation(libs.kotlin.reflect)
     implementation(libs.okhttp.logging)
+
+    // unit tests (JUnit, MockK for mocking and coroutines-test for the viewmodels)
+    testImplementation(libs.junit)
+    testImplementation(libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
 }
