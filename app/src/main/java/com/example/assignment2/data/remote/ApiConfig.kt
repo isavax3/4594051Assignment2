@@ -4,8 +4,8 @@ package com.example.assignment2.data.remote
 object ApiConfig {
     const val BASE_URL = "https://nit3213apinew.onrender.com/"
 
-    // my class location, used in the login url (/sydney/auth)
-    const val CLASS_LOCATION = "sydney"
+    // my class location, used in the login url (/footscray/auth)
+    const val CLASS_LOCATION = "footscray"
 
     // the api is on a free server that goes to sleep, so the first request can be slow
     const val TIMEOUT_SECONDS = 60L

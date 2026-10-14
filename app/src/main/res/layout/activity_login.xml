@@ -195,6 +195,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            tools:text="Class location: Sydney" />
+            tools:text="Class location: Footscray" />
     </LinearLayout>
 </ScrollView>

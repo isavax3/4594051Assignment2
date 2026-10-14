@@ -19,7 +19,7 @@ import java.io.IOException
 class AuthRepositoryImplTest {
 
     private val apiService: ApiService = mockk()
-    private val repository = AuthRepositoryImpl(apiService = apiService, classLocation = "sydney")
+    private val repository = AuthRepositoryImpl(apiService = apiService, classLocation = "footscray")
 
     @Test
     fun `returns the keypass when the login works`() = runTest {
@@ -36,7 +36,7 @@ class AuthRepositoryImplTest {
 
         repository.login("12345678", "Alex")
 
-        coVerify { apiService.login("sydney", LoginRequest(username = "12345678", password = "Alex")) }
+        coVerify { apiService.login("footscray", LoginRequest(username = "12345678", password = "Alex")) }
     }
 
     @Test

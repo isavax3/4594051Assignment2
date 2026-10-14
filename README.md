@@ -11,7 +11,7 @@ is carried over from my assignment 1 app.
 ## The 3 screens
 | Screen | What it does | Files |
 |---|---|---|
-| Login | Student ID and first name fields. Sends a POST to `/sydney/auth` and shows an error if it doesn't work | `LoginActivity`, `LoginViewModel`, `activity_login.xml` |
+| Login | Student ID and first name fields. Sends a POST to `/footscray/auth` and shows an error if it doesn't work | `LoginActivity`, `LoginViewModel`, `activity_login.xml` |
 | Dashboard | Uses the keypass from the login to GET `/dashboard/{keypass}` and shows each entity in a RecyclerView (without the description) | `DashboardActivity`, `DashboardViewModel`, `EntityAdapter`, `item_entity.xml` |
 | Details | Shows every property of the entity that was tapped, plus its description | `DetailsActivity`, `DetailsViewModel`, `activity_details.xml` |
 
@@ -36,8 +36,8 @@ If Android Studio asks about the Gradle JDK, the JDK that comes with Android Stu
 The API is on a free server that goes to sleep when nobody is using it, so the first login can take up to a minute.
 The app waits for it (the timeout is 60 seconds) and shows a message while it's loading.
 
-My class is Sydney so the app uses `/sydney/auth`. To use another class location, change `CLASS_LOCATION` in
-`data/remote/ApiConfig.kt` to `footscray` or `br`.
+My class is Footscray so the app uses `/footscray/auth`. To use another class location, change `CLASS_LOCATION` in
+`data/remote/ApiConfig.kt` to `sydney` or `br`.
 
 ## Running the unit tests
 - In Android Studio: right click the `app/src/test` folder and pick "Run 'Tests in ...'"
@@ -94,7 +94,7 @@ Because the ViewModels and repositories get their dependencies passed in, the te
 | `LoginViewModelTest` | loading then success with the keypass, input checks (empty fields, "s" in the ID), API errors, no double login, resetting the state |
 | `DashboardViewModelTest` | loads entities with the keypass on start, error state, "Try again" after an error, missing keypass |
 | `DetailsViewModelTest` | rebuilds the entity from the intent extras, handles missing or broken extras |
-| `AuthRepositoryImplTest` | sends the right request to `/sydney/auth`, turns 400/401/500 and no internet into the right errors |
+| `AuthRepositoryImplTest` | sends the right request to `/footscray/auth`, turns 400/401/500 and no internet into the right errors |
 | `EntityRepositoryImplTest` | maps the dashboard response, falls back to the list size, 404 and bad json |
 | `EntityMapperTest` | description handling, field order, readable labels and number formatting |
 | `EntityAdapterTest` | the RecyclerView adapter's item count and refreshing the list |
@@ -107,7 +107,7 @@ Base URL: `https://nit3213apinew.onrender.com/`
 
 | Endpoint | Method | Body / response |
 |---|---|---|
-| `/sydney/auth` | POST | `{"username": "<student id>", "password": "<first name>"}` gives back `{"keypass": "<topic>"}` |
+| `/footscray/auth` | POST | `{"username": "<student id>", "password": "<first name>"}` gives back `{"keypass": "<topic>"}` |
 | `/dashboard/{keypass}` | GET | `{"entities": [ ... ], "entityTotal": 7}` |
 
 The OkHttp logger is set to BASIC so Logcat only shows the URL and status code, not the request body with the
