@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- same colours as my assignment 1 app -->
+<resources>
+    <color name="cream">#FFFAF7F1</color>          <!-- background -->
+    <color name="white">#FFFFFFFF</color>          <!-- cards and text fields -->
+    <color name="ink">#FF24231F</color>            <!-- main text -->
+    <color name="grey">#FF77756D</color>           <!-- grey text -->
+    <color name="line">#FFE7E1D7</color>           <!-- borders and lines -->
+    <color name="accent">#FFE4482C</color>         <!-- red for buttons, links and icons -->
+    <color name="accent_tint">#FFFBE8DF</color>    <!-- light red backgrounds -->
+</resources>
