@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One property row on the details screen: small grey label with the value under it -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- line between rows, hidden on the first row -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/text_label"
+        style="@style/App.Text.Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:textColor="@color/grey"
+        tools:text="Year" />
+
+    <TextView
+        android:id="@+id/text_value"
+        style="@style/App.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="14dp"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        tools:text="1906" />
+</LinearLayout>

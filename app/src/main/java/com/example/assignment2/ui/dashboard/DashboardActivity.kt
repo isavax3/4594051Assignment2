@@ -10,21 +10,22 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.example.assignment2.R
+import com.example.assignment2.data.model.Entity
 import com.example.assignment2.databinding.ActivityDashboardBinding
 import com.example.assignment2.ui.common.padForSystemBars
 import com.example.assignment2.ui.common.setUpEdgeToEdge
+import com.example.assignment2.ui.details.EntityExtras
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 // Screen 2 - Dashboard
-// Shows the entities for the user's topic in a RecyclerView.
+// Shows the entities for the user's topic in a RecyclerView. Tapping one opens Details.
 @AndroidEntryPoint
 class DashboardActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDashboardBinding
     private val viewModel: DashboardViewModel by viewModels()
-    // tapping an item doesn't do anything until the details screen is added
-    private val adapter = EntityAdapter(onItemClick = {})
+    private val adapter = EntityAdapter(onItemClick = ::openDetails)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,6 +67,10 @@ class DashboardActivity : AppCompatActivity() {
             }
         }
         if (state !is DashboardUiState.Success) binding.textEmpty.isVisible = false
+    }
+
+    private fun openDetails(entity: Entity) {
+        startActivity(EntityExtras.newDetailsIntent(this, entity))
     }
 
     companion object {

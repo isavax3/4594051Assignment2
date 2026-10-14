@@ -29,6 +29,11 @@
         <activity
             android:name=".ui.dashboard.DashboardActivity"
             android:exported="false" />
+
+        <!-- details screen -->
+        <activity
+            android:name=".ui.details.DetailsActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
