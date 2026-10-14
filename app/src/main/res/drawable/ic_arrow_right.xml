@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- arrow on the Order Now button -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M 4.166,10 H 15.834 M 10,15.834 L 15.834,10 L 10,4.166"
+        android:strokeColor="#FF24231F"
+        android:strokeLineCap="round"
+        android:strokeWidth="1" />
+</vector>
