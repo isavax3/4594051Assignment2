@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Login screen (screen 1)
-    Same style as my assignment 1 login form: cream background, white fields and a red button.
+    Cream background, white fields and a red button.
     It's in a ScrollView so the form still fits when the keyboard is open.
 -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -23,7 +23,7 @@
         android:paddingEnd="@dimen/screen_margin"
         android:paddingBottom="20dp">
 
-        <!-- app name with the red dot like the supper logo -->
+        <!-- app name with a small red dot after it -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

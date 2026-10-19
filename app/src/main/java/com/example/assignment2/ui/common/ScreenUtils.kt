@@ -8,7 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-// helpers all 3 screens use (same idea as my ScreenUtils in assignment 1)
+// helpers all 3 screens use so the same code isn't repeated in each activity
 
 // draws the app behind the status bar and nav bar. "light" style = dark icons,
 // which suits the cream background even if the phone is in dark mode

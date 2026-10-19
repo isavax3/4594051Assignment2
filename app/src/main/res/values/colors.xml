@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- same colours as my assignment 1 app -->
+<!-- the app's colours: cream background, dark text and a red accent -->
 <resources>
     <color name="cream">#FFFAF7F1</color>          <!-- background -->
     <color name="white">#FFFFFFFF</color>          <!-- cards and text fields -->

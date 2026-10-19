@@ -5,8 +5,8 @@ first name, gets my topic's list of entities and shows them in a RecyclerView. T
 screen with everything about it, including the description.
 
 It's written in Kotlin with XML layouts and uses Hilt for dependency injection, Retrofit + Moshi for the API calls,
-ViewModels with StateFlow, and JUnit + MockK for the unit tests. The look (cream background, red buttons, Inter font)
-is carried over from my assignment 1 app.
+ViewModels with StateFlow, and JUnit + MockK for the unit tests. The app uses a cream background, red buttons and the
+Inter font.
 
 ## The 3 screens
 | Screen | What it does | Files |
@@ -17,7 +17,7 @@ is carried over from my assignment 1 app.
 
 ## How to build and run
 What you need:
-- Android Studio with support for Android Gradle Plugin 9.0 (I used the same setup as assignment 1)
+- Android Studio with support for Android Gradle Plugin 9.0
 - An emulator or phone running Android 8.0 (API 26) or newer, with internet access
 
 Steps:
