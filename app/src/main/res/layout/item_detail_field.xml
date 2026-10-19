@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="14dp"
         android:textColor="@color/grey"
-        tools:text="Year" />
+        tools:text="Culture" />
 
     <TextView
         android:id="@+id/text_value"
@@ -31,5 +31,5 @@
         android:paddingBottom="14dp"
         android:textIsSelectable="true"
         android:textSize="16sp"
-        tools:text="1906" />
+        tools:text="Greek" />
 </LinearLayout>

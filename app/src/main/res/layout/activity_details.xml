@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            tools:text="Monet" />
+            tools:text="Zeus" />
 
         <!-- DetailsActivity adds one item_detail_field row in here for each property -->
         <com.google.android.material.card.MaterialCardView
@@ -85,7 +85,7 @@
                 android:padding="18dp"
                 android:textIsSelectable="true"
                 android:textSize="15sp"
-                tools:text="A French painter and one of the founders of Impressionism." />
+                tools:text="King of the Olympian gods and ruler of Mount Olympus." />
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 </ScrollView>

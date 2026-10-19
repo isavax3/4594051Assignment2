@@ -25,7 +25,7 @@
             app:layout_constraintEnd_toStartOf="@id/image_chevron"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Monet" />
+            tools:text="Zeus" />
 
         <TextView
             android:id="@+id/text_summary"
@@ -37,7 +37,7 @@
             app:layout_constraintEnd_toStartOf="@id/image_chevron"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_title"
-            tools:text="Painting: Water Lilies\nYear: 1906" />
+            tools:text="Culture: Greek\nDomain: Sky and Thunder\nSymbol: Thunderbolt" />
 
         <!-- arrow so it looks tappable -->
         <ImageView

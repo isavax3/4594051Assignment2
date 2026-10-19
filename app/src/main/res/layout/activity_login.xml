@@ -139,9 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:accessibilityLiveRegion="polite"
-            android:visibility="gone"
-            tools:text="@string/error_wrong_details"
-            tools:visibility="visible" />
+            android:visibility="gone" />
 
         <!-- log in button with a spinner on top of it while it's loading -->
         <FrameLayout
