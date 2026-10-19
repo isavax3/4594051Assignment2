@@ -24,7 +24,11 @@ Steps:
 1. Clone the repo: `git clone <repo link>` (or download it as a zip and unzip it)
 2. In Android Studio go to File > Open and pick the project folder
 3. Wait for the Gradle sync to finish. The first sync downloads all the libraries so it can take a few minutes
-4. Pick an emulator or phone and press Run
+4. Turn on the emulator first. Open Device Manager (the phone icon on the right side of Android Studio), find your
+   emulator (I used a Pixel 6a on API 35) and press its play button. Wait until the phone has fully started and shows
+   the home screen
+5. Make sure the emulator is picked in the device list at the top of Android Studio, then press the green play
+   button (Run 'app') in the top toolbar. The app installs and opens on the login screen
 
 The project uses Gradle 9.1 through the Gradle wrapper, so you don't need to install Gradle yourself.
 If Android Studio asks about the Gradle JDK, the JDK that comes with Android Studio works.
